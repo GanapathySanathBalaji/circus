@@ -25,7 +25,7 @@ public class Circus {
         }
     }
 
-    private static int calculateAssetValue(Asset[] assets) {
+    private static int calculateValue(Asset[] assets) {
         int total = 0;
         for (Asset a : assets) {
             if (a.getValue() <= 5) {
@@ -34,13 +34,17 @@ public class Circus {
             }
             total += a.getValue();
             System.out.println("Adding item value: " + a.getValue());
+            // some
+            // more
+            // code
+            // here ...
         }
         return total;
     }
 
     public static void main(String[] args) {
         makeAnimalsTalk();
-        System.out.println("Total value of animals " + calculateAssetValue(animals));
-        System.out.println("Total value of equipments " + calculateAssetValue(equipments));
+        System.out.println("Total value of equipments " + calculateValue(equipments));
+        System.out.println("Total value of animals " + calculateValue(animals));
     }
 }

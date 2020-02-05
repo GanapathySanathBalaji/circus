@@ -1,7 +1,9 @@
 package circus.animal;
 
-public abstract class Bird extends Animal {
-    public String speak() {
-        return "tweet tweet";
+import circus.Asset;
+
+public abstract class Bird extends Animal implements Asset {
+    public void fly() {
+        System.out.println("Whee ...");
     }
 }
